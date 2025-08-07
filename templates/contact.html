@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Harshit Pundir for collaboration, freelance work or career opportunities." />
+  <title>Contact | Harshit Pundir</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <header class="navbar glass">
+    <div class="logo">Harshit Pundir</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact" class="active">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">🌙</button>
+  </header>
+
+  <main class="content glass">
+    <h1>Contact Me</h1>
+    <p>If you'd like to work together, collaborate, or just chat, feel free to reach out!</p>
+
+    <address>
+      <p>📧 Email:
+        <a href="mailto:harshitpundir36@gmail.com">harshitpundir36@gmail.com</a>
+      </p>
+      <p>🔗 GitHub:
+        <a href="https://github.com/Harshit-pundir" target="_blank" rel="noopener noreferrer">
+          github.com/Harshit-pundir
+        </a>
+      </p>
+      <p>💼 LinkedIn:
+        <a href="https://www.linkedin.com/in/harshit-pundir-a5b112332/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/harshit-pundir
+        </a>
+      </p>
+      <p>📄 Resume:
+        <a href="{{ url_for('static', filename='Harshit-Pundir-Resume.pdf') }}" download>
+          Download Resume
+        </a>
+      </p>
+    </address>
+  </main>
+
+  <footer>
+    <p>© 2025 Harshit Pundir. All rights reserved.</p>
+  </footer>
+</body>
+</html>

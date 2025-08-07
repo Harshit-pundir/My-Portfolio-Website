@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Harshit Pundir's portfolio projects including Flask blog, coffee locator app, and flash card app.">
+  <title>Projects | Harshit Pundir</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <header class="navbar glass">
+    <div class="logo">Harshit Pundir</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects" class="active">Projects</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">🌙</button>
+  </header>
+
+  <main class="content glass">
+    <h1>🚀 Projects</h1>
+
+    <div class="project-card">
+      <h2>📝 Flask Blog Website</h2>
+      <p>A full-stack blog website with login system, rich text editor, comment support, and admin panel.</p>
+      <p><strong>Tech Stack:</strong> Flask, SQLAlchemy, CKEditor, Bootstrap</p>
+      <a class="btn" href="https://github.com/Harshit-pundir/Blog-Website" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h2>☕ Coffee & Wifi Locator</h2>
+      <p>Find and rate cafes by coffee quality and wifi speed. Clean UI and database support.</p>
+      <p><strong>Tech Stack:</strong> Flask, HTML/CSS, SQLite</p>
+      <a class="btn" href="https://github.com/Harshit-pundir/coffee-and-wifi-locator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h2>🎴 Flash Card App</h2>
+      <p>A Python desktop app to help memorize vocabulary with timed flashcard flipping.</p>
+      <p><strong>Tech Stack:</strong> Python, Tkinter, CSV</p>
+      <a class="btn" href="https://github.com/Harshit-pundir/Flash-Card-Project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Harshit Pundir. All rights reserved.</p>
+  </footer>
+</body>
+</html>

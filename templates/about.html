@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Harshit Pundir</title>
+
+  <!-- CSS and JS linked via Flask -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar glass">
+    <div class="logo">Harshit Pundir</div>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content glass">
+    <h1>About Me</h1>
+    <p>Hello! I'm <strong>Harshit Pundir</strong>, a passionate Python developer with strong interest in web development, Flask, and emerging AI technologies.</p>
+    <p>I’ve completed <em>Angela Yu’s 100 Days of Code Python Bootcamp</em> and built various projects including a full-stack blog app, flashcard desktop app, and more.</p>
+    <p>Currently focused on building beautiful full-stack web apps and preparing for my future as a <strong>Machine Learning Engineer</strong>.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Harshit Pundir. All rights reserved.</p>
+  </footer>
+</body>
+</html>
