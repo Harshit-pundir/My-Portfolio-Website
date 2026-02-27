@@ -15,7 +15,7 @@ Welcome to my personal portfolio website built using **Flask**, **HTML**, **CSS*
 - **Frontend**: HTML5, CSS3
 - **Backend**: Python (Flask)
 - **Styling**: Custom CSS (Glassmorphism + Responsive Design)
-- **Deployment**: (You can deploy on Render, Heroku, etc.)
+
 
 ---
 
